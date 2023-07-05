@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #101010e8;
+}
+body,
+.main_cotainer,
+.list_area ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_cotainer::-webkit-scrollbar{
+    width: 0;
+}
+.main_cotainer{
+    background: #fff;
+    flex-direction: column;
+    overflow-x: none;
+    overflow-y: scroll;
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 40vh;
+    height: 40vh;
+    max-height: 60vh;
+    padding: 10px;
+}
+.inputbox input::placeholder{
+color: #ffffffaf;
+}
+.inputbox input{
+    border: none;
+    background: #101010e8;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    height: 100%;
+    outline: none; 
+}
+.EditBtn,
+.deletBtn{
+    border: none;
+    outline: none;
+    height: 25px;
+    margin:  0 4px;
+    aspect-ratio: 1 !important;
+    background: #d6cfcf;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px;
+}
+.addBtn 
+{
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 0 5px;
+    transform: translate(0px, -4px);
+    font-weight: 550;
+    background: #6dff13;
+    cursor: pointer;
+}
+.inputbox{
+    height: 15%;
+    width: 100%;
+    padding: 0px;
+}
+.list_area{
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    text-align: left;
+}
+.list_area ul li{
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 10px 0;
+    border: 2px solid;
+    padding: 5px 8px;
+    list-style: none;
+}
+/* .list_area ul li button:nth-child(2){
+    background: #fd4242;
+}
+.EditBtn{
+    background: #60f504;
+} */
